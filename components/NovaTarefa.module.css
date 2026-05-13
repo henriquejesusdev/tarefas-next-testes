@@ -1,0 +1,42 @@
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  margin-bottom: 30px;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.input {
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.input:focus {
+  outline: none;
+  border: 1px solid #2563eb;
+}
+
+.botao {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: 0.2s;
+}
+
+.botao:hover {
+  background: #1d4ed8;
+}
+
+.erro {
+  color: red;
+  font-size: 14px;
+}

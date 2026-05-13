@@ -1,0 +1,49 @@
+.lista {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.item {
+  background: #f8fafc;
+  padding: 16px;
+  border-radius: 10px;
+  border-left: 6px solid #2563eb;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.status {
+  font-weight: bold;
+}
+
+.concluida {
+  color: green;
+}
+
+.pendente {
+  color: orange;
+}
+
+.acoes {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.botao {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.botao:hover {
+  background: #1d4ed8;
+}
