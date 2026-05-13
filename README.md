@@ -20,3 +20,16 @@ Projeto criado com Next.js 15, App Router, TypeScript, Jest e Testing Library.
 
 ```bash
 npm install
+```
+
+## Como executar
+
+```bash
+npm run dev
+```
+
+## Como testar
+
+```bash
+npm test
+```

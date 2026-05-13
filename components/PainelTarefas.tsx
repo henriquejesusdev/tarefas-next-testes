@@ -4,6 +4,7 @@ import { useState } from "react";
 import { ListaTarefas } from "@/components/ListaTarefas";
 import { NovaTarefa } from "@/components/NovaTarefa";
 import { Tarefa } from "@/data/tarefas";
+import { useContadorDeTarefas } from "@/hooks/useContadorDeTarefas";
 import styles from "@/styles/Home.module.css";
 
 type PainelTarefasProps = {
@@ -12,6 +13,7 @@ type PainelTarefasProps = {
 
 export function PainelTarefas({ tarefasIniciais }: PainelTarefasProps) {
   const [tarefas, setTarefas] = useState(tarefasIniciais);
+  const totalDeTarefas = useContadorDeTarefas(tarefas);
 
   function adicionarTarefa(titulo: string) {
     setTarefas((tarefasAtuais) => [
@@ -48,7 +50,7 @@ export function PainelTarefas({ tarefasIniciais }: PainelTarefasProps) {
   return (
     <>
       <p className={styles.total}>
-        Total de tarefas: {tarefas.length}
+        Total de tarefas: {totalDeTarefas}
       </p>
 
       <NovaTarefa onAdicionar={adicionarTarefa} />
