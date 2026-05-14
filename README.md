@@ -4,7 +4,7 @@ Projeto criado com Next.js 15, App Router, TypeScript, Jest e Testing Library.
 
 ## Site publicado
 
-Link do deploy na Vercel: adicione aqui a URL gerada pela Vercel apos o primeiro deploy.
+Link do deploy na Vercel: https://tarefas-next-testes-opal.vercel.app/
 
 ## Funcionalidades
 
